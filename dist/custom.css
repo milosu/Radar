@@ -1,0 +1,46 @@
+.container-fluid{
+    max-width: 90%;
+    margin-right: 5%;
+    margin: 0 auto;
+}
+
+
+.pill-active {
+    width: 260px;
+    -webkit-box-shadow: 5px 5px 0px -1px #8D94A4;
+    box-shadow: 5px 5px 0px -1px #8D94A4;
+}
+
+.pill-active:hover + .pills{
+    display: block;
+    cursor: pointer;
+}
+
+.pill-active:hover{
+    opacity: 0;
+    box-shadow: none;
+}
+
+.pills:hover{
+    display: block;
+}
+
+.pills:hover + .pill-active{
+    opacity: 0;
+    box-shadow: none;
+}
+
+.pills{
+    width: 260px;
+    margin-top: -70px;
+    position: absolute;
+}
+
+table{
+    width: 100%;
+    
+}
+
+.companies{
+    overflow-x: scroll;
+}
