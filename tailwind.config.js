@@ -13,6 +13,7 @@ module.exports = {
       primary: '#3878E5',
       disabled: '#9DA5B0',
       secondary: '#1A2848',
+      green: '#34C710',
     },
     fontFamily: {
       'poppins': ['Poppins', 'sans-serif']

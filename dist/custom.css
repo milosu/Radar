@@ -4,71 +4,10 @@
     margin: 0 auto;
 }
 
-.pill{
-    width: 170px;
-}
-
-.pill-active {
-    width: 170px;
-    -webkit-box-shadow: 5px 5px 0px -1px #8D94A4;
-    box-shadow: 5px 5px 0px -1px #8D94A4;
-    z-index: 2;
-}
-
-.pill-active:hover+.pills {
-    display: block;
-    cursor: pointer;
-    animation-name: easedown;
-    animation-timing-function: ease;
-}
-
-.pill-active:hover {
-    box-shadow: none;
-    
-
-}
-
-.pills:hover {
-    display: block;
-
-}
-
-.pills:hover+.pill-active {
-    opacity: 0;
-    box-shadow: none;
-
-}
-
-@keyframes easedown {
-    0% {
-        transform: translateY(0);
-    }
-
-    100% {
-        transform: translateY(63px);
-    }
-}
-
-.pills {
-    z-index: 1;
-    width: 170px;
-    margin-top: -70px;
-    position: absolute;
-    transform: translate(0px, 63px) rotate(0deg) !important;
-    animation-duration: 0.8s;
-    
-}
-
-.pills>div{
-    -webkit-box-shadow: 6px 50px 50px 11px #FFFFFF; 
-box-shadow: 6px 50px 50px 11px #FFFFFF;
-}
-
 
 
 table {
     width: 100%;
-
 }
 
 .companies {
@@ -78,6 +17,7 @@ table {
 .min-w-170 {
     min-width: 170px;
 }
+
 .min-w-220 {
     min-width: 220px;
 }
@@ -94,10 +34,11 @@ table {
     min-width: 150px;
 }
 
-.max-w-450{
+.max-w-450 {
     max-width: 450px;
 }
-.min-w-450{
+
+.min-w-450 {
     min-width: 450px;
 }
 
@@ -105,6 +46,49 @@ table {
     vertical-align: top;
 }
 
-input::after{
+
+input::after {
     border: none;
 }
+
+
+/* fade */
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: all .15s ease-in;
+}
+
+.fade-enter,
+.fade-leave-to{
+    transform: translate(0px, 100px) rotate(0deg) !important;
+    opacity: 1;
+}
+
+.pills {
+    max-width: 170px;
+}
+
+.pills-hidden{
+    position: absolute;
+}
+
+.pill:hover + .pills-hidden{
+    display: block;
+}
+
+
+
+@media only screen and (min-width: 900px) and (max-width: 1670px) {
+    html{
+        font-size: 11px;
+    }
+
+    .min-w-320 {
+        min-width: 220px;
+    }
+
+    .min-w-150{
+        min-width: 100px;
+    }
+  }
