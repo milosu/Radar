@@ -73,15 +73,20 @@ input::after {
     position: absolute;
 }
 
-.pill:hover + .pills-hidden>div:nth-child(odd){
+.pill:hover + .pills-hidden>div:nth-child(1){
+    display: block;
+    background: #1A2848;
+    animation: fadeIn 0.5s alternate;
+}
+.pill:hover + .pills-hidden>div:nth-child(2){
     display: block;
     background: #1A2848;
     animation: fadeIn 1s alternate;
 }
-.pill:hover + .pills-hidden>div:nth-child(even){
+.pill:hover + .pills-hidden>div:nth-child(3){
     display: block;
     background: #1A2848;
-    animation: fadeIn2 1s alternate;
+    animation: fadeIn 1.5s alternate;
 }
 .pill:hover + .pills-hidden{
     display: block;
@@ -90,9 +95,9 @@ input::after {
 
 @keyframes fadeIn { 
     0% { opacity: 0; }
-    15% { transform: translateY(-20px); } 
+    10% { transform: translateY(-30px); } 
     70% { opacity: 1; }
-    70%{ transform: translateY(20px); }
+    40%{ transform: translateY(15px); }
     100%{ transform: translateY(0px); }
   }
 @keyframes fadeIn2 { 
@@ -106,6 +111,8 @@ input::after {
 .pill:hover>div{
     background: #1A2848;
 }
+
+.header-logolink div:nth-child(1)
 
 
 
