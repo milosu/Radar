@@ -123,27 +123,6 @@ input::after {
     }
 }
 
-@keyframes fadeIn2 {
-    0% {
-        opacity: 0;
-    }
-
-    15% {
-        transform: translateY(-10px);
-    }
-
-    70% {
-        opacity: 1;
-    }
-
-    70% {
-        transform: translateY(10px);
-    }
-
-    100% {
-        transform: translateY(0px);
-    }
-}
 
 .pill:hover>div {
     background: #1A2848;
