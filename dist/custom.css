@@ -73,8 +73,38 @@ input::after {
     position: absolute;
 }
 
+.pill:hover + .pills-hidden>div:nth-child(odd){
+    display: block;
+    background: #1A2848;
+    animation: fadeIn 1s alternate;
+}
+.pill:hover + .pills-hidden>div:nth-child(even){
+    display: block;
+    background: #1A2848;
+    animation: fadeIn2 1s alternate;
+}
 .pill:hover + .pills-hidden{
     display: block;
+    
+}
+
+@keyframes fadeIn { 
+    0% { opacity: 0; }
+    15% { transform: translateY(-20px); } 
+    70% { opacity: 1; }
+    70%{ transform: translateY(20px); }
+    100%{ transform: translateY(0px); }
+  }
+@keyframes fadeIn2 { 
+    0% { opacity: 0; }
+    15% { transform: translateY(-10px); } 
+    70% { opacity: 1; }
+    70%{ transform: translateY(10px); }
+    100%{ transform: translateY(0px); }
+  }
+
+.pill:hover>div{
+    background: #1A2848;
 }
 
 
