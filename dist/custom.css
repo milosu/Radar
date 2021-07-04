@@ -46,6 +46,10 @@ table {
     vertical-align: top;
 }
 
+.company>td{
+    vertical-align: top;
+}
+
 
 input::after {
     border: none;
@@ -66,7 +70,7 @@ input::after {
 }
 
 .pills {
-    max-width: 170px;
+    width: 125px;
 }
 
 .pills-hidden {
@@ -127,7 +131,7 @@ input::after {
 .pill:hover>div {
     background: #1A2848;
 }
-
+/* 
 .header-logolink div:nth-child(1) @media only screen and (min-width: 900px) and (max-width: 1670px) {
     html {
         font-size: 11px;
@@ -140,4 +144,4 @@ input::after {
     .min-w-150 {
         min-width: 100px;
     }
-}
+} */
